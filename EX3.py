@@ -7,8 +7,8 @@ Insert missing code so that you get output similar to pyplot2.mp4.
 """
 
 N = 100
-P = np.random.rand(100,2)*0.8 + 0.1
-S = np.random.randn(100,2)
+P = np.random.rand(100, 2) * 0.8 + 0.1
+S = np.random.randn(100, 2)
 g = np.array([0, -9.8])
 
 # the space constraints

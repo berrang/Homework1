@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def show_tensor(t):
 
+def show_tensor(t):
     for key in t:
         data = t[key]
         fig, ax = plt.subplots()
@@ -17,7 +17,7 @@ def show_tensor(t):
             plt.ylabel("dim 0")
             plt.xlabel("dim 1")
 
-        cax = ax.pcolor(data, cmap=plt.cm.seismic, edgecolor='black', linewidth=10, vmin = -3.0, vmax = 3.0)
+        cax = ax.pcolor(data, cmap=plt.cm.seismic, edgecolor='black', linewidth=10, vmin=-3.0, vmax=3.0)
         fig.colorbar(cax)
 
         fig.canvas.set_window_title(key)
@@ -25,7 +25,6 @@ def show_tensor(t):
         # put the major ticks at the middle of each cell
         ax.set_xticks(np.arange(data.shape[1]) + 0.5, minor=False)
         ax.set_yticks(np.arange(data.shape[0]) + 0.5, minor=False)
-
 
         # want a more natural, table-like display
         ax.invert_yaxis()
