@@ -31,5 +31,6 @@ while True:
     plt.clf()
 
     """insert your code here"""
+    plt.scatter(p_min,p_max)
 
     plt.pause(0.005)
