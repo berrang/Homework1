@@ -31,6 +31,14 @@ while True:
     plt.clf()
 
     """insert your code here"""
-    plt.scatter(p_min,p_max)
+   axes = plt.gca()
+    axes.set_xlim(p_min[0],p_max[0])
+    axes.set_ylim(p_min[1],p_max[1])
+
+    x = P[:, 0]
+    y = P[:, 1]
+
+    plt.plot(x, y, 'bo')
 
     plt.pause(0.005)
+
